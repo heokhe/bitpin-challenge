@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: var(--color-gray-100);
+  --color-text: var(--color-gray-600);
+  --color-title: var(--color-gray-800);
+  --color-divider: var(--color-gray-200);
+  --color-primary: var(--color-green-600);
+  --color-primary-foreground: var(--color-background);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-gray-950);
+    --color-text: var(--color-gray-400);
+    --color-title: var(--color-gray-200);
+    --color-primary: var(--color-green-400);
+    --color-divider: var(--color-gray-900);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+  }
+
+  ::selection {
+    @apply bg-primary/10;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
