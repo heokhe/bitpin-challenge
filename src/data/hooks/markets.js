@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { fetcher } from '../utils/fetcher';
+import { fetcher } from '../../common/utils/fetcher';
 
 export function useMarkets() {
   const { data, isLoading } = useSWR(

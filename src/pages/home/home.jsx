@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from 'lucide-react';
 
 import { Link } from 'react-router';
-import { useMarkets } from '../../common/hooks/markets';
+import { useMarkets } from '../../data/hooks/markets';
 import Button from '../../common/components/Button';
 import { useSearchParams } from 'react-router';
 import NavBar from '../../common/components/NavBar';

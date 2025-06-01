@@ -22,11 +22,12 @@
    npm run preview
    ```
 
-## Libraries/things Used
+## Libraries/tools Used
 
+- Vite for building the app
 - React
 - React Router
-- SWR for data fetching and caching
+- SWR for fetching and caching data
 - Tailwind
 - Decimal.js
 - class-variance-authority and tailwind-merge for writing better components and styles

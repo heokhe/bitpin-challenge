@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import useSWR from 'swr';
 import Button from '../../common/components/Button';
 import NavBar from '../../common/components/NavBar';
-import { useMarket } from '../../common/hooks/markets';
+import { useMarket } from '../../data/hooks/markets';
 import { fetcher } from '../../common/utils/fetcher';
 import MatchesView from './components/MatchesView';
 import OrdersView from './components/OrdersView';
